@@ -1,0 +1,55 @@
+.header{
+    text-align: center;
+    background-color: aqua;
+    width: 100%;
+}
+.content{
+    text-align: center;
+}
+.my-btn{
+    width: 80%;
+}
+.result{
+    border: 1px solid #e0e0e0; border-radius: 15px;
+    color: #fff;
+	background: #00b09b;
+	background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+	background: linear-gradient(to right, #96c93d, #00b09b);
+    width: 100%;
+}
+.result:hover {
+    background: #b00017;
+	background: -webkit-linear-gradient(to right, #3d91c9, #b09e00);
+	background: linear-gradient(to right, #c93d7e, #00b026);
+}
+.hidden{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+.loading{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px dotted black;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .result{
+        width: 50%;
+    }
+    .flex{
+        display: block;
+    }
+}
